@@ -158,6 +158,17 @@ span {
   color: whitesmoke;
   font-weight: 200;
 }
+.box-active {
+  background: #2b2b37;
+  width: 33.33%;
+  margin: 20px;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+.box:hover ~ .box-active {
+  background: #050311;
+}
 @media screen and (max-width: 420px) {
   body {
     margin: 20px;
