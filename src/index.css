@@ -76,7 +76,7 @@ button.go:hover > i.fa.fa-chevron-right {
   flex-wrap: wrap;
 }
 .food {
-  width: 45%;
+  width: 45.5%;
   margin: 0 0 20px 20px;
   border: 1px solid lightgray;
   border-radius: 5px;
@@ -125,6 +125,39 @@ span {
   font-weight: 700;
   margin-left: 10px;
 }
+.headimg img {
+  width: 100%;
+}
+.dynamic-content {
+  background: #050311;
+  display: flex;
+  flex-direction: row;
+}
+.box {
+  background: #050311;
+  width: 33.33%;
+  margin: 20px;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+.box-heading p {
+  font-size: 16px;
+  color: white;
+}
+.box-content p {
+  font-size: 12px;
+  color: gray;
+  line-height: 24px;
+  font-weight: 400;
+}
+.box:hover {
+  background-color: #2b2b37;
+  border-radius: 5px;
+}
+.box:hover .box-content p {
+  color: whitesmoke;
+  font-weight: 200;
+}
 @media screen and (max-width: 420px) {
   body {
     margin: 20px;
@@ -150,6 +183,19 @@ span {
   .food {
     width: 100%;
     margin: 0 0 15px 0px;
+  }
+  .dynamic-content {
+    display: block;
+    background: white;
+  }
+  .headimg img {
+    height: 150px;
+  }
+  .box {
+    width: unset;
+    background: #050311;
+    margin: 30px 0 0 0;
+    border-radius: 5px;
   }
 }
 @media screen and (max-width: 320px) {
